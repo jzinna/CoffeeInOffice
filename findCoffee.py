@@ -27,7 +27,7 @@ while len(remainingDesks) != 0:     #loop ends when I've checked all desks
         adjs = []
         FindAdjacentDesks(last) #get 'adjs' list with all adjacent desks
         
-        TempPaths = [TempPaths.append(li[:].append(a) for a in adjs)
+        TempPaths = [li[:].append(a) for a in adjs]
         '''for a in adjs:  #iterate over all adjacent cells and add each new path to 'TempPaths'
             temp = li[:]
             temp.append(a)
