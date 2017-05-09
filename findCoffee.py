@@ -9,6 +9,7 @@ for r in range(numRows+1):      #loads all desks into list 'remainingDesks'
         if (r,c) not in walls and r != 0 and c != 0:
             remainingDesks.append((r,c))
 
+distance = len(remainingDesks)
 remainingDesks.remove(DeskLocation)
 
 
@@ -44,7 +45,6 @@ while len(remainingDesks) != 0:     #loop ends when I've checked all desks
     if len(paths) == 0:     #when all paths have ended in coffee, stop the iteration
         break
 
-distance = len(desks)
 for s in Solutions:
     if len(s) < distance:   #find which of the solutions is the shortest
         distance = len(s)
